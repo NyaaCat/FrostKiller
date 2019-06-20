@@ -1,0 +1,19 @@
+name: FrostKiller
+main: cat.nyaa.frostkiller.FrostKillerPlugin
+description: "disable frost walker enchantment"
+version: v1.0
+depend: [NyaaCore,LangUtils]
+authors: [ReinWD]
+website: "https://github.com/NyaaCat/no-frosted-ice"
+database: false
+api-version: 1.13
+commands:
+  frostkiller:
+    description: Commands for no frost ice plugin
+    permission: frostkiller.admin
+    permission-message: "You do not have the required permission: <permission>"
+    usage: "/<command> [SubCommand...] [Arguments...] or /<command> help"
+permissions:
+  frostkiller.admin:
+    default: op
+    description: admin command

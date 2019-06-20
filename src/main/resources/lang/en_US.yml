@@ -1,0 +1,7 @@
+error:
+  permission: you don't have required permission
+  no_world: there's no world of name %s
+enabled: enabled Frost Killer, frost forming stopped.
+disabled: disabled Frost Killer, frosts now starts to form.
+clear_finished: clear finished, total %d chunks & %d blocks
+reloaded: config reloaded

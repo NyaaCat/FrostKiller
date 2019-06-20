@@ -1,0 +1,7 @@
+error:
+  permission: 你没有对应的权限
+  no_world: 未找到世界 %s
+enabled: 已启动 Frost Killer, 霜冰将不再生成
+disabled: 已停止 frost killer, 霜冰将可以生成
+clear_finished: 清理完成, 共计 %d 区块 及 %d 方块
+reloaded: 已重新加载配置
