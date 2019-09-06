@@ -1,25 +1,30 @@
 # no-frosted-ice
 Disable Frosted Ice Enchant in Minecraft.
 
-##Usage
-
-   ###enabled 
+## Usage
+ ### config.yml
+    enabled
+    
     default: false
     enable base function of this plugin
     don't allow new frost to form.
-   
-   ###removeItem 
+  ----
+    removeItem 
+    
     default: false
     remove armors with frost walker enchantment 
     when players join the server.
     this overrides removeEnchant
    
-   ###removeEnchant 
+   ----
+    removeEnchant 
+    
     default: false
     remove frost walker enchantment from player's armor
     when players join the server.
     
-##Commands
+## Commands
+
     /frostkiller reload         //reload plugin config
     /frostkiller enable         //toggle killer
     /frostkiller smelt          //smelt frosted ice in sender's world 
@@ -31,5 +36,5 @@ when enabled, this plugin will deny all events of creating frosted ice from the 
 
 smelt function will run asynchronously, scan all chunk loaded in the world and replace all frosted ice with water.
 
-smelt is isolated from *enable*. It can be used separately. 
+smelt is isolated from *enable* . It can be used separately. 
 
