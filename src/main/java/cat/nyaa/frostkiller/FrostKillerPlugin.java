@@ -1,5 +1,6 @@
 package cat.nyaa.frostkiller;
 
+import org.bukkit.command.PluginCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.Objects;
@@ -20,7 +21,9 @@ public class FrostKillerPlugin extends JavaPlugin {
         i18n = new I18n(configuration.language);
         command = new FrostKillerCommand(this, i18n);
         event = new FrostKillerEvent();
-        Objects.requireNonNull(getCommand("frostkiller")).setExecutor(command);
+        PluginCommand frostkillerCommand = Objects.requireNonNull(getCommand("frostkiller"));
+        frostkillerCommand.setExecutor(command);
+        frostkillerCommand.setTabCompleter(command);
         getServer().getPluginManager().registerEvents(event, this);
     }
 

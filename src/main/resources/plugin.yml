@@ -6,7 +6,7 @@ depend: [NyaaCore,LangUtils]
 authors: [ReinWD]
 website: "https://github.com/NyaaCat/no-frosted-ice"
 database: false
-api-version: 1.13
+api-version: 1.14
 commands:
   frostkiller:
     description: Commands for no frost ice plugin

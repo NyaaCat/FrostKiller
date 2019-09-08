@@ -1,8 +1,10 @@
 package cat.nyaa.frostkiller;
 
-import cat.nyaa.nyaacore.CommandReceiver;
 import cat.nyaa.nyaacore.ILocalizer;
 import cat.nyaa.nyaacore.Message;
+import cat.nyaa.nyaacore.cmdreceiver.Arguments;
+import cat.nyaa.nyaacore.cmdreceiver.CommandReceiver;
+import cat.nyaa.nyaacore.cmdreceiver.SubCommand;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.command.BlockCommandSender;
@@ -26,7 +28,7 @@ public class FrostKillerCommand extends CommandReceiver {
 
     @Override
     public String getHelpPrefix() {
-        return null;
+        return "";
     }
 
     @SubCommand(value = "reload", permission = "frostkiller.admin")
